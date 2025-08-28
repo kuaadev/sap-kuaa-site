@@ -1,8 +1,6 @@
-import fetch from "node-fetch";
-
 export async function handler() {
     try {
-        const API_KEY = process.env.SPINITRON_API_KEY; // Set this in Netlify
+        const API_KEY = process.env.SPINITRON_API_KEY;
         const response = await fetch(
             "https://spinitron.com/api/spins?count=1&station=kuaa",
             {

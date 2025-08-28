@@ -48,9 +48,11 @@ export default function AudioPlayer() {
             alignItems: "center",
             gap: "0.5rem"
         }}>
-            <img src={track.cover || "https://via.placeholder.com/50"}
+            <img
+                src={track.cover || "https://via.placeholder.com/50"}
                 alt={track.title}
-                style={{ width: "50px", height: "50px", borderRadius: "4px" }} />
+                style={{ width: "50px", height: "50px", borderRadius: "4px" }}
+            />
             <div>
                 <div style={{ fontWeight: "bold" }}>{track.title}</div>
                 <div style={{ fontSize: "0.85rem" }}>{track.artist}</div>
